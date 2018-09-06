@@ -66,6 +66,16 @@ def circle_and_rectangle():
            75.0
            150.0
     """
+    win = rg.RoseWindow
+    cir = rg.Circle(center, radius)
+    rec= rg.Rectangle(cor1, cor2)
+
+
+
+    cir.attach_to(win)
+    rec.attach_to(win)
+    win.render()
+    win.close_on_mouse_click()
     # ------------------------------------------------------------------
     # TODO: 3. Implement this function, per its green doc-string above.
     #   -- ANY objects that meet the criteria are fine.
